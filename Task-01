@@ -1,0 +1,165 @@
+PORTFOLIO
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Portfolio — Sarika Nirala</title>
+  <style>
+    :root{
+      --accent:#6C5CE7;
+      --muted:#6b7280;
+      --bg:#f8fafc;
+      --card:#ffffff;
+      --radius:12px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:#111}
+
+    header{background:linear-gradient(90deg, rgba(108,92,231,0.12), transparent);padding:18px 24px;position:sticky;top:0;backdrop-filter:blur(4px);z-index:20}
+    .nav{max-width:1000px;margin:0 auto;display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:48px;height:48px;border-radius:10px;background:var(--accent);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+    nav a{margin-left:16px;color:var(--muted);text-decoration:none;font-weight:600}
+
+    .container{max-width:1000px;margin:28px auto;padding:0 18px}
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:24px;align-items:center}
+    .card{background:var(--card);border-radius:var(--radius);padding:20px;box-shadow:0 6px 18px rgba(12,15,20,0.06)}
+
+    .intro h1{margin:0 0 8px 0;font-size:28px}
+    .intro p{margin:0;color:var(--muted)}
+
+    .profile{display:flex;flex-direction:column;align-items:center;text-align:center}
+    .avatar{width:220px;height:220px;border-radius:16px;object-fit:cover}
+    .download{display:inline-block;margin-top:12px;padding:10px 14px;border-radius:10px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
+
+    section{margin-top:22px}
+    h2{font-size:18px;margin:0 0 10px 0}
+    .grid{display:grid;gap:12px}
+
+    .skills{display:flex;flex-wrap:wrap;gap:10px}
+    .skill{background:#f1f5f9;padding:8px 12px;border-radius:999px;font-weight:600;color:#374151}
+
+    .projects{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .project{display:flex;flex-direction:column;gap:8px}
+    .project img{width:100%;height:160px;object-fit:cover;border-radius:10px}
+    .meta{color:var(--muted);font-size:14px}
+
+    .contact{display:flex;flex-direction:column;gap:8px}
+    .contact a{color:var(--accent);text-decoration:none;font-weight:700}
+
+    footer{max-width:1000px;margin:32px auto;padding:18px;text-align:center;color:var(--muted)}
+
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .projects{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <div class="brand">
+        <div class="logo">SN</div>
+        <div>
+          <div style="font-weight:800">Sarika Nirala</div>
+          <div style="font-size:12px;color:var(--muted);margin-top:2px">Software Developer • MCA Student</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="hero">
+      <div class="intro card">
+        <h1>Hi — I’m Sarika Nirala</h1>
+        <p>Driven Software Developer with expertise in designing, developing, and optimizing scalable applications. Passionate about problem-solving, teamwork, and continuous learning.</p>
+        <div style="margin-top:16px">
+          <strong>Location:</strong> Greater Noida, Uttar Pradesh &nbsp; • &nbsp; <strong>Availability:</strong> Open to opportunities
+        </div>
+      </div>
+
+      <aside class="card profile">
+        <img class="avatar" src="https://via.placeholder.com/440x440.png?text=Sarika+Nirala" alt="Sarika Nirala portrait">
+        <a id="resume" class="download" href="Sarika%20resume.docx" download>Download Resume (DOCX)</a>
+      </aside>
+    </div>
+
+    <section id="about">
+      <div class="card">
+        <h2>About</h2>
+        <p style="color:var(--muted);margin-top:8px;line-height:1.6">I’m currently pursuing a Master of Computer Applications at Galgotias University. With a strong academic foundation (B.Sc. Computer Science, DCA), I specialize in software development, web technologies, and data analysis. I enjoy building projects that solve real-world problems and enhance user experiences.</p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="card">
+        <h2>Skills</h2>
+        <div class="skills" style="margin-top:10px">
+          <div class="skill">C</div>
+          <div class="skill">Python</div>
+          <div class="skill">Java</div>
+          <div class="skill">HTML</div>
+          <div class="skill">CSS</div>
+          <div class="skill">JavaScript</div>
+          <div class="skill">MySQL</div>
+          <div class="skill">Power BI</div>
+          <div class="skill">MS Excel</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="card">
+        <h2>Projects</h2>
+        <div class="projects" style="margin-top:12px">
+          <article class="project card">
+            <img src="https://via.placeholder.com/640x360.png?text=Mercatus+Project" alt="Mercatus Project">
+            <div>
+              <div style="font-weight:800">MERCATUS (Diwali Sales Analysis)</div>
+              <div class="meta">Used Excel, Python, and Power BI to forecast demand, improve inventory management, and reduce stockouts by 10% during peak shopping days.</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="resume">
+      <div class="card">
+        <h2>Resume</h2>
+        <p style="color:var(--muted)">Click the button above to download a copy of my resume. The file <strong>Sarika resume.docx</strong> is included alongside this page.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="card">
+        <h2>Contact</h2>
+        <div class="contact" style="margin-top:8px">
+          <div>Email: <a href="mailto:sarikanirala1010@gmail.com">sarikanirala1010@gmail.com</a></div>
+          <div>Phone: <a href="tel:+918109638629">+91 8109638629</a></div>
+          <div>LinkedIn: <a href="https://www.linkedin.com/in/sarika-nirala-593839364" target="_blank">Sarika Nirala</a></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div>© <span id="year"></span> Sarika Nirala. All rights reserved.</div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+OUTPUT:-
+http://127.0.0.1:5500/Task1.html 
